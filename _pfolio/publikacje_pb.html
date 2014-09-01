@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>portfolio - grafik dtp, operator dtp, art director, web designer</title>
+<style type="text/css">
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url(../_images/sanstonePaper.jpg);
+	margin: 0px;
+	padding: 0px;
+}
+#contener {
+	padding: 0px;
+	width: 1100px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	background-position: bottom;
+	height: 600px;
+	border-bottom-width: 2px;
+	border-bottom-style: groove;
+	border-bottom-color: #FC3;
+}
+#commercial  {
+	margin: 0px;
+	padding: 0px;
+	height: 267px;
+	width: 191px;
+	position: absolute;
+	left: 317px;
+	top: 178px;
+}
+#realestate  {
+	margin: 0px;
+	padding: 0px;
+	height: 267px;
+	width: 191px;
+	position: absolute;
+	left: 81px;
+	top: 177px;
+}
+#ktkt  {
+	position: absolute;
+	left: 208px;
+	top: 626px;
+}
+#iguide  {
+	position: absolute;
+	height: 267px;
+	width: 191px;
+	left: 568px;
+	top: 179px;
+}
+#retail {
+	position: absolute;
+	height: 267px;
+	width: 191px;
+	left: 830px;
+	top: 183px;
+}
+#ostPubs {
+	margin: 0px;
+	padding: 0px;
+	width: 470px;
+	position: absolute;
+	left: -196px;
+	top: 41px;
+}
+#goBack {
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+	width: 150px;
+	position: absolute;
+	cursor: pointer;
+	left: 929px;
+	top: 483px;
+}
+#goBack a {
+	background-image: url(back2pf.png);
+	display: inline;
+	text-decoration: none;
+	top: 0px;
+	bottom: auto;
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	left: 1px;
+	color: #FFC;
+}
+#goBack a:hover {
+	background-image: url(back2pf_hover.png);
+
+}
+#pubInfo {
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+	width: 150px;
+	position: absolute;
+	left: 765px;
+	top: 483px;
+}
+#contener #pubInfo a  {
+	color: #F5F3E4;
+	background-image: url(mpubinfo.png);
+	display: inline;
+	text-decoration: none;
+	top: 0px;
+	bottom: auto;
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	left: 1px;
+}
+#contener #pubInfo a:hover {
+	background-image: url(mpubinfo_hover.png);
+}
+#ptxt {
+	margin: 0px;
+	padding: 0px;
+	height: 417px;
+	width: 600px;
+	position: absolute;
+	left: 162px;
+	top: 197px;
+	z-index: 1000;
+}
+.vible {
+	display: block;
+}
+.invible {
+	display: none;
+}
+</style>
+</head>
+<body>
+<div id="contener">
+  <div id="ostPubs"><img src="ostatniepublikacje.png" width="469" height="75" alt="ostatnie publikacje" /></div>
+  <div id="pubInfo">
+    <p><a href="#">'</a></p></div>
+  <div id="iguide"><a href="investment_display.html" target="_blank"><img src="investmentGuide.png" width="191" height="267" alt="publikacja 3" /></a></div>
+  <div id="ktkt"><img src="kontakt.png" alt="footer" name="ktkt" width="900" height="145"  /></div>
+  <div id="realestate"><a href="realestate_display.html" target="_blank"><img src="reguide.png" width="191" height="267" alt="publikacja 1" /></a></div>
+  <div id="commercial"><a href="commercial_display.html" target="_blank"><img src="cpguide.png" width="191" height="267" alt="publikacja 2" /></a></div>
+  <div id="retail"><a href="retail_display.html" target="_blank"><img src="retguide.png" width="191" height="267" alt="publikacja 4" /></a></div>
+  <div class="invible" id="ptxt"><img src="tooltip_txt.png" width="600" height="417" alt="info o zakresie odpowiedzialności w kwestiach publikacji" /></div>
+  <div id="goBack"><a href="simplepfolio.html">.</a></div>
+</div>
+<script type="text/javascript">
+window.onload = prepareAll;
+
+function prepareAll() { 
+
+//alert("we are loaded!");
+
+document.getElementById("pubInfo").onmouseover = function () {
+		//alert("clicked!");
+		document.getElementById("ptxt").className = ""; 
+		document.getElementById("ptxt").className = "vible";
+};
+
+document.getElementById("pubInfo").onmouseout = function () {
+		document.getElementById("ptxt").className = "invible";
+};
+
+}
+</script>
+</body>
+</html>

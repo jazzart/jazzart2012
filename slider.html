@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+#wrapper {
+	margin: 0 auto;
+	width: 800px;	
+}
+#slide {
+	height: 300px;
+	width: 150px;
+	position: absolute;
+	overflow:hidden;
+	border: 1px solid #33C;
+}
+#menu {
+	background-image: url(_source/base.png);
+	height: 300px;
+	width: 150px;
+	position: absolute;
+	/*top: -300px;*/
+	/* [disabled]display:none; */
+	top: -300px;
+}
+#wrapper #user {
+	position: absolute;
+	left: 987px;
+	top: 513px;
+}
+#wrapper #btn {
+	position: absolute;
+	left: 1063px;
+	top: 561px;
+}
+#wrapper #skok {
+	background-image: url(_source/base.png);
+	position: absolute;
+	height: 300px;
+	width: 150px;
+	left: 626px;
+	top: 163px;
+}
+#wrapper #sap {
+	background-image: url(_source/base.png);
+	position: absolute;
+	height: 300px;
+	width: 150px;
+	left: 850px;
+	top: 85px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper"> 
+	<div id="slide"><p>yes!</p></div>
+  <div id="menu"></div>
+<div id="skok"></div>
+<div id="sap"></div>
+<button id="btn">Hop!</button>
+<input name="User" type="text" id="user" maxlength="45" />
+
+</div>
+
+<script src="jquery-1.6.4.min.js"></script>
+<script src="jquery.cookies.js"></script>
+<script src="jquery-ui-1.8.16.custom.min.js"></script>
+<script src="behaviors.js"></script>
+</body>
+</html>

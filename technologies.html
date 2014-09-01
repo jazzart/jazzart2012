@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="web, design, warsaw, newsletter, freelance, development" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jazzart.eu - web design in warsaw</title>
+
+<link href="midsize.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="Scripts/jquery-1.7.1.min.js"> </script> 
+<script type="text/javascript" src="Scripts/jquery-ui-1.8.16.custom.min.js"></script>
+<script  type="text/javascript" src="midsize_script.js"> </script>
+<script type="text/javascript">
+
+
+	 function Loaded() {
+		//alert('check');
+		function  flashover (evt)  {
+			//alert("flash button hovered");
+			$("#tFlash").css({'background-position' : 'left bottom'});
+			$("#as3").fadeIn(300);
+		};
+		
+		function  flashleave (evt)  {
+			//alert("flash button hovered");
+			$("#tFlash").css({'background-position' : 'left top'});
+			$("#as3").fadeOut(150);
+		};
+		
+		function  jqueryhover (evt)  {
+			//alert("jquery button hovered");
+			$("#tJquery").css({'background-position' : 'left bottom'});
+			$("#jsjq").fadeIn(300);
+
+		};
+		
+		function  jqueryleave (evt)  {
+			//alert("jquery button hovered");
+			$("#tJquery").css({'background-position' : 'left top'});
+			$("#jsjq").fadeOut(150);
+		};
+		
+		function  htmlhover (evt)  {
+			//alert("html button hovered");
+			$("#tHtml5").css({'background-position' : 'left bottom'});
+			$("#h5css3").fadeIn(300);
+		};
+		
+		function  htmlleave (evt)  {
+			//alert("html button hovered");
+			$("#tHtml5").css({'background-position' : 'left top'});
+			$("#h5css3").fadeOut(150);
+		};
+		 
+		 $("#tFlash").bind('mouseover', flashover);
+		 $("#tFlash").bind('mouseleave', flashleave);
+		 $("#tJquery").bind('mouseover', jqueryhover);
+		 $("#tJquery").bind('mouseleave', jqueryleave);
+  		$("#tHtml5").bind('mouseover', htmlhover);
+		 $("#tHtml5").bind('mouseleave', htmlleave);
+
+	 };
+	
+	window.onload = Loaded;
+	//$("document").ready(Loaded());
+
+	
+
+
+</script>
+
+</head>
+
+
+
+
+<body>
+<div id="wrapper">
+  <div id="header">
+  	<a href="index.html"><img src="_images/jazzart-logo-wht.png" alt="jazzart logo" name="logo" width="252" height="150" id="logo" /></a>	
+	<h1>jazzart.eu design warsaw web design web development front-end www design warsaw</h1>
+  </div>
+      <div id="navbox">
+      			<ul>
+                		<li><h3 id="hProducts"><a href="#">products</a></h3></li>
+                        <li><h3 id="hAbout"><a href="#">about us</a></h3></li>
+                        <li><h3 id="hMore"><a href="#">more</a></h3></li>
+        </ul>
+                
+  </div>
+<div id="products">
+<ul>
+                                <li><a href="products.html">products</a></li>
+                                <li><a href="draft.html">draft stage</a></li>
+                                <li><a href="delivery.html">delivery</a></li>
+    </ul>               
+  </div>
+<div id="about">
+<ul>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="warranty.html">warranty</a></li>
+                                <li><a href="contacts.html">contacts</a></li>
+    </ul>               
+  </div>
+<div id="more">
+<ul>
+                                <li><a href="more.html">more</a></li>
+                                <li><a class="isnow" href="#">technologies</a></li>
+                                <li><a href="services.html">services</a></li>
+    </ul>               
+  </div>
+
+
+<div id="content" class="tlr">
+  			<div id="window"> <img src="_images/technics.jpg" width="330" height="330" alt="background" /> </div>
+    <div id="txts">
+  			    <h2>Technologies</h2>
+                <p>Among internet font-end technologies we work with there are standards like (X)HTML, CSS (Cascading Style Sheets), JavaScript and its frameworks (mostly jQuery, jQuery mobile, Prototype and Modernizr), Flash / Actionscript 3 and new emerging standards like HTML5 and CSS3. <br />
+                  <br />
+      </p>
+                <p>Find out more:</p>
+ 
+ <div id="tFlash"></div>
+<div id="tJquery"></div>
+<div id="tHtml5"></div>
+  
+<div id="as3">
+                  			<p>Flash and Actionscript 3 technologies allow  to build encapsulated web content, enriched with animations, transitions and video. Flash used with Actionscript 3 object-oriented programming is the best way to present rich media online. Flash is also leading technology in website banner ads. For now, Flash technology is poorly supported by handheld devices.
+</p>
+      </div>
+<div id="jsjq">
+		<p>JavaScript is a programming language that in web design describes behaviors and dynamic ux elements, often used to boost up user interaction and send server queries. JavaScript frameworks, such as jQuery, prototype or Modernizer serve as great tools to build animations, transitions and as a way of abstraction layer built to eliminate differences between browsers' rendering.</p>
+      </div>
+                  
+                   <div id="h5css3">
+                  			<p>HTML5 and CSS3 are emerging technologies, not fully implemented in all browsers yet, but already in wide use because of their capabilities - new types of mark-up elements with new functionality like geolocation, local storage, video and sound embeding and styles targeted for mobile devices.</p>
+                  </div>
+  	<div id="goContact">
+  	  <p> <a href="contacts.html" class="strong">Contact us</a> for more details. </p></div>
+  </div>
+ 
+ 
+ </div>
+
+
+<div class="ups" id="footerUP"><img src="_images/jazzart_copyright.png" width="126" height="45" alt="jazzart copyright" /></div>
+</div>
+
+
+
+</body>
+</html>

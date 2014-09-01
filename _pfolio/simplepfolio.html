@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Krzysztof, Cichy, web, deisgner, portfolio" />
+
+<title>Krzysztof Cichy Portfolio</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
+<!--[if lt IE 7]>
+ <style type="text/css">
+ .dock img { behavior: url(iepngfix.htc) }
+ </style>
+<![endif]-->
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<div id="wrapper">
+<img src="images/mypic.png" alt="Krzysztof" id="kc"/>
+<img src="images/name.png" alt="Krzysztof_Cichy" id="kc_name"/>
+<img src="images/textabout.png" alt="Cichy" id="motto"/>
+<div id="contener"> 
+	<div id="homemes"> <img src="images/welcome_mse.png"/> </div>
+
+
+
+	<div id="about"> <h3>About me </h3> 
+		<p class="write"> 
+            Through my almost 10 years career I have been working on positions of all industry levels – from DTP Specialist to Graphic Designer, Web Designer and 
+            Art Director, mostly in English spoken, international environment. I have gained experience in worldwide-operating companies and workplaces in several 
+            cities in Europe. In my portfolio you can find layout and graphic design, brand and company identification, advertising campaigns, catalogues, magazine layouts and web design: front-end, web layouts and newsletter campaigns. <br />
+            <br />
+            I strongly believe in the principle that you can only be good when you are doing something you really like. My occupation emerged from passion to photography and graphics and evolved into skills I can firmly use to deliver professional results. I am trying to always stay open to new technologies and styles of design, constantly developing my skills – right now in web development direction.
+        </p> 
+	</div>
+	
+    <div id="contacts">
+    <h3> Contacts </h3> 
+    <p id="eneloop" class="elo"> xx </p>
+ 	<p id="tele" class="tel"> Phone: (+48) 608 401 416</p>   
+    </div>
+    
+    <div id="websites"> <h3>Websites </h3>
+	<h4> Last projects: </h4>
+    <a href="http://jazzart.eu">jazzart.eu</a><br />
+    <a href="https://www.wirtualnebiuro-aliorbank.pl">wirtualne biuro alior</a><br />
+    <a href="http://netfoto.com.pl">netfoto</a><br />
+    <h4> Projects in the pipeline: </h4>    
+    <a href="http://jazzart.eu/fosidal/fosidal.html">fosidal</a><br />
+    <a href="http://jazzart.eu/gamesite/gamerdraft.html">gamer's site</a>
+    </div> 
+    
+    <div id="print"> <h3>Layouts and Graphic Design <br />for print </h3>
+	<a href="http://jazzart.eu/trl.html">Older projects (link to external site)</a><br />
+<br />
+
+    <a href="http://jazzart.eu/_pfolio/publikacje_pb.html">Magazines (link to external site)</a>
+ <br />
+<br />
+<br />
+
+        
+    <a href="#" id="crt">Current projects</a><br />
+    </div> 
+    
+    <div id="nprint"> <h3>Available soon</h3>
+    	<img src="images/oric.jpg" alt="home" />
+    </div>
+    <div id="folio"> <h3>Portfolio </h3> 
+    <h4> This section is under development. More information about my portfolio will be available soon.<br /><br /> To see my latest web design please check Websites section. Selection of printed layouts, magazines and catalogues is available in Print Design section. Both links you can find at the lower part of the browser window. </h4>
+    </div>
+     <div id="res"> <h3>Resources </h3> 
+    <h4> This section is under development. More information about my resources will be available soon.</h4>
+    </div>
+     <div id="news"> <h3>News </h3> 
+    <h4> It is September 19, late evening and I have just uploaded this new version of my portfolio minisite. <br />
+			Still lot to finish and touch up, please come back soon for more. </h4>
+    </div>
+
+</div> 
+
+
+</div>
+
+
+
+<!--bottom dock -->
+<div class="dock" id="dock2">
+  <div class="dock-container2">
+  <a class="dock-item2" id="homemenu" href="#"><span>Home</span><img src="images/domux.png" alt="home" /></a> 
+  <a class="dock-item2" id="contactmenu" href="#"><span>Contact</span><img src="images/envl.png" alt="contact" /></a> 
+  <a class="dock-item2" id="foliomenu" href="#"><span>Portfolio</span><img src="images/suitcase.png" alt="portfolio" /></a> 
+  <a class="dock-item2" id="webmenu" href="#"><span>Websites</span><img src="images/lap.png" alt="websites" /></a> 
+  <a class="dock-item2" id="printmenu" href="#"><span>Print Design</span><img src="images/printer.png" alt="print" /></a> 
+  <a class="dock-item2" id="aboutmenu" href="#"><span>About Me</span><img src="images/about.png" alt="about" /></a> 
+  <a class="dock-item2" id="resmenu" href="#"><span>Resources</span><img src="images/resr.png" alt="resources" /></a> 
+  <a class="dock-item2" id="newsmenu" href="#"><span>News</span><img src="images/globe.png" alt="news" /></a> 
+  </div>
+</div>
+
+<!--dock menu JS options -->
+<script type="text/javascript">
+		var a = "jazzart";
+		var b = ".eu@gm";
+		var c = "ail.c";
+		var x = "om"; 
+	$(document).ready(
+		function()
+		{
+			$('#dock2').Fisheye(
+				{
+					maxWidth: 60,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container2',
+					itemWidth: 40,
+					proximity: 80,
+					alignment : 'left',
+					valign: 'bottom',
+					halign : 'center'
+				}
+			)
+		
+
+		var selectors = ["#contacts", "#homemes", "#about", "#websites", "#folio", "#res", "#news", "#print", "#nprint"]
+		
+		function iter (arg) {
+		 
+		 for (i = 0; i < selectors.length; i++) {
+		     $(selectors[i]).css("visibility", "hidden"); 
+		  if ( selectors[i] == arg) {
+		     $(selectors[i]).css("visibility", "visible");
+		  }	
+		 }
+		 		 
+		}
+		
+		$("#eneloop").html(a + b + c + x);
+		$("#contacts").css("visibility", "hidden");	
+		$("#homemes").css("visibility", "visible");	
+		$("#about").css("visibility", "hidden");
+		$("#websites").css("visibility", "hidden");
+		$("#folio").css("visibility", "hidden");
+		$("#res").css("visibility", "hidden");
+		$("#news").css("visibility", "hidden");
+		$("#print").css("visibility", "hidden");
+		$("#nprint").css("visibility", "hidden");
+			
+		$("#aboutmenu").click(function (e){
+			iter("#about");
+			});
+		$("#homemenu").click(function (e){
+			iter("#homemes");
+			});
+		$("#contactmenu").click(function (e){
+			iter("#contacts");
+			});
+		$("#webmenu").click(function (e){
+			iter("#websites");
+			});
+		$("#foliomenu").click(function (e){
+			iter("#folio");
+			});
+		$("#resmenu").click(function (e){
+			iter("#res");
+			});
+		$("#newsmenu").click(function (e){
+			iter("#news");
+			});
+		$("#printmenu").click(function (e){
+			iter("#print");
+			});	
+		$("#crt").click(function (e){
+			iter("#nprint");
+			});				
+				
+		}
+	);
+
+</script>
+</body>
+</html>
